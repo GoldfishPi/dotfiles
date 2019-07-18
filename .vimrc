@@ -42,6 +42,7 @@ Plug 'posva/vim-vue'
 
 "css
 Plug 'ap/vim-css-color'
+Plug 'joukevandermaas/vim-ember-hbs'
 
 call plug#end()
 
