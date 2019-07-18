@@ -16,6 +16,8 @@ set showcmd
 call plug#begin('~/.vim/plugged')
 "vim util
 Plug 'powerline/powerline'
+Plug 'aserebryakov/vim-todo-lists'
+Plug 'kien/ctrlp.vim'
 
 "Themes
 Plug 'crusoexia/vim-monokai', {'as':'monokai'}
@@ -36,7 +38,10 @@ Plug 'janko/vim-test'
 
 "Vue Plugins
 Plug 'posva/vim-vue'
-Plug 'Quramy/tsuquyomi-vue'
+"Plug 'Quramy/tsuquyomi-vue'
+
+"css
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
@@ -44,6 +49,11 @@ syntax on
 color onedark 
 set background=dark
 set t_Co=256
+
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType vue set omnifunc=htmlcomplete#CompleteTags
+
+set wildignore+=*/node_modules/*,*/build/*,*/.build/*,*/dist/*,*/.dist/*
 
 "key maps
 imap ii <Esc>
