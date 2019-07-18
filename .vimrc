@@ -53,7 +53,12 @@ set t_Co=256
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType vue set omnifunc=htmlcomplete#CompleteTags
 
+"Files we never want to search with ctrlP
 set wildignore+=*/node_modules/*,*/build/*,*/.build/*,*/dist/*,*/.dist/*
+
+"relative line number
+set relativenumber
+set rnu
 
 "key maps
 imap ii <Esc>
