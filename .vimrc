@@ -18,6 +18,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'powerline/powerline'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 "Themes
 Plug 'crusoexia/vim-monokai', {'as':'monokai'}
@@ -39,10 +41,14 @@ Plug 'janko/vim-test'
 "Vue Plugins
 Plug 'posva/vim-vue'
 "Plug 'Quramy/tsuquyomi-vue'
+Plug 'leafoftree/vim-vue-plugin'
+
 
 "css
 Plug 'ap/vim-css-color'
 Plug 'joukevandermaas/vim-ember-hbs'
+"Plug 'lunaru/vim-less'
+Plug 'groenewege/vim-less'
 
 call plug#end()
 
@@ -64,3 +70,14 @@ set rnu
 "key maps
 imap ii <Esc>
 nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuit<CR>
+
+"fzf/file search
+nmap <silent> f<C-f> :Ag<CR> 
+
+"TSU
+nmap <silent> t<C-i> :TsuImport<CR>
+nmap <silent> t<C-r> :TsuRenameSymbol<CR>
+
+
+
