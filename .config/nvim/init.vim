@@ -29,8 +29,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'Shougo/vimproc.vim', {'do':'make'}
-"Plug 'valloric/youcompleteme', { 'do': 'python3 install.py --ts-completer' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'valloric/youcompleteme', { 'do': 'python3 install.py --ts-completer' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'Galooshi/vim-import-js'
 
@@ -40,6 +40,10 @@ Plug 'janko/vim-test'
 "Vue Plugins
 Plug 'posva/vim-vue'
 "Plug 'Quramy/tsuquyomi-vue'
+
+"React
+Plug 'mxw/vim-jsx'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 "css
 Plug 'ap/vim-css-color'
