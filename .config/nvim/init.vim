@@ -18,6 +18,9 @@ Plug 'powerline/powerline'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'kien/ctrlp.vim'
 Plug 'mboughaba/i3config.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
 
 "Themes
 Plug 'crusoexia/vim-monokai', {'as':'monokai'}
@@ -29,8 +32,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'Shougo/vimproc.vim', {'do':'make'}
-"Plug 'valloric/youcompleteme', { 'do': 'python3 install.py --ts-completer' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'valloric/youcompleteme', { 'do': 'python3 install.py --ts-completer' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'Galooshi/vim-import-js'
 
@@ -46,7 +49,7 @@ Plug 'ap/vim-css-color'
 Plug 'joukevandermaas/vim-ember-hbs'
 
 call plug#end()
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 syntax on 
 color onedark 
@@ -68,5 +71,18 @@ set rnu
 "key maps
 imap ii <Esc>
 nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuit<CR>
 
+"fzf/file search
+nmap <silent> f<C-f> :Ag<CR> 
 
+"TSU
+nmap <silent> t<C-i> :TsuImport<CR>
+nmap <silent> t<C-r> :TsuRenameSymbol<CR>
+
+"NERD TREE
+map <C-n> :NERDTreeToggle<CR>
+" enable line numbers
+let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
