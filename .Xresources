@@ -1,6 +1,7 @@
 !--------------------xdefauls
-URxvt.font: xft:monospace:pixelsize=16
-urxvt*termName: rxvt
+!URxvt.font: xft:mono:pixelsize=16
+URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=16:style=Book
+!urxvt*termName: Terminal
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
 urxvt.transparent: true
@@ -13,14 +14,19 @@ Xft*hintstyle: hintfull
 URxvt*cursorUnderline: true
 Xft*rgba: rgb
 URxvt*geometry: 85x20
-*internalBorder: 26
+*internalBorder: 0
 URxvt*fading: 0
 URxvt*tintColor: #ffffff
 URxvt*shading: 20
 URxvt*inheritPixmap: False
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c900
+urxvt*blurRadius: 5
+
 ! special
 *.foreground:   #c5c8c6
-*.background:   #1f1f1f
+*.background:   #000032
 *.cursorColor:  #c5c8c6
 
 ! black
@@ -36,13 +42,12 @@ URxvt*inheritPixmap: False
 *.color10:      #746f81
 
 ! yellow
-*.color3:       #545670
-*.color11:      #545670
+*.color3:       #41F0FD
+*.color11:      #41F0FD
 
 ! blue
-*.color4:       #6a9bb9
-*.color12:      #6a9bb9
-
+*.color4:       #FD6073
+*.color12:      #FD6073
 ! magenta
 *.color5:       #764970
 *.color13:      #764970
